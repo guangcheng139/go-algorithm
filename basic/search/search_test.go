@@ -109,6 +109,12 @@ func TestFirstOccurrence(t *testing.T) {
 			expected: 1,
 		},
 		{
+			name:     "目标值存在（重复）",
+			arr:      []int{5, 7, 7, 8, 8, 10},
+			target:   8,
+			expected: 3,
+		},
+		{
 			name:     "目标值不存在",
 			arr:      []int{1, 2, 4, 5},
 			target:   3,
@@ -144,6 +150,12 @@ func TestLastOccurrence(t *testing.T) {
 			arr:      []int{1, 2, 2, 2, 3, 4, 5},
 			target:   2,
 			expected: 3,
+		},
+		{
+			name:     "目标值存在（重复）",
+			arr:      []int{5, 7, 7, 8, 8, 10},
+			target:   8,
+			expected: 4,
 		},
 		{
 			name:     "目标值不存在",
